@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
         const surveyBlocks: SlackBlock[] = [
             {
                 type: "header",
-                text: { type: "plain_text", text: `📊 Neuer KI-Readiness Check — ${companyName}`, emoji: true },
+                text: { type: "plain_text", text: `📊 Neue KI-Potenzialanalyse — ${companyName}`, emoji: true },
             },
             {
                 type: "section",
@@ -121,7 +121,7 @@ export async function POST(req: NextRequest) {
                     {
                         type: "button",
                         text: { type: "plain_text", text: "📧 E-Mail senden" },
-                        url: `mailto:${contactEmail}?subject=Ihr KI-Readiness Ergebnis (${totalPercent}%)`,
+                        url: `mailto:${contactEmail}?subject=Ihr KI-Ergebnis (${totalPercent}%)`,
                     },
                     ...(contactPhone !== "-"
                         ? [
@@ -182,7 +182,7 @@ export async function POST(req: NextRequest) {
         <div style="font-family:'Open Sans',system-ui,sans-serif;max-width:600px;margin:0 auto">
           <div style="background:#0D0D0D;padding:24px 32px;border-radius:16px 16px 0 0">
             <span style="display:inline-block;background:#bbd8a7;color:#0D0D0D;font-weight:bold;padding:4px 10px;border-radius:6px;font-size:14px;margin-right:8px">KI</span>
-            <span style="color:white;font-weight:600">KI-Readiness Check</span>
+            <span style="color:white;font-weight:600">KI-Potenzialanalyse</span>
           </div>
           <div style="background:white;padding:32px;border:1px solid #eee;border-top:none;border-radius:0 0 16px 16px">
             <h1 style="font-size:24px;margin:0 0 8px">${maturityEmoji} Ihr Ergebnis: ${maturityLabel}</h1>
@@ -193,7 +193,7 @@ export async function POST(req: NextRequest) {
             ${recommendations ? `<h3 style="margin:24px 0 12px">🎯 Ihre Empfehlungen</h3><ol style="padding-left:20px;color:#444">${recommendations}</ol>` : ""}
 
             <div style="text-align:center;margin:32px 0 16px">
-              <a href="https://calendly.com/trackbytrack/ki-beratung" style="display:inline-block;background:#bbd8a7;color:#0D0D0D;font-weight:bold;padding:14px 28px;border-radius:12px;text-decoration:none;font-size:16px">
+              <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ37vXtNEiJgPdMVYb5dssJ2SCErLPRc8WZDQ6PSOp4QPwZU2IJIoKqEExVDt6xnCYrcpQCiQjwu" style="display:inline-block;background:#bbd8a7;color:#0D0D0D;font-weight:bold;padding:14px 28px;border-radius:12px;text-decoration:none;font-size:16px">
                 Kostenloses Beratungsgespräch buchen →
               </a>
             </div>
@@ -211,9 +211,9 @@ export async function POST(req: NextRequest) {
                     Authorization: `Bearer ${resendKey}`,
                 },
                 body: JSON.stringify({
-                    from: `KI-Readiness Check <noreply@${domain || "ki-fuer-den-mittelstand.de"}>`,
+                    from: `KI-Potenzialanalyse <noreply@${domain || "ki-fuer-den-mittelstand.de"}>`,
                     to: contactEmail,
-                    subject: `${maturityEmoji} Ihr KI-Readiness Ergebnis: ${totalPercent}% — ${maturityLabel}`,
+                    subject: `${maturityEmoji} Ihr KI-Ergebnis: ${totalPercent}% — ${maturityLabel}`,
                     html: emailHtml,
                 }),
             });
