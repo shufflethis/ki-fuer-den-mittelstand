@@ -24,10 +24,10 @@ export const siteConfig = {
         ],
     },
     author: {
-        name: "Tobias Kargoll",
+        name: "Tobias Sander",
         role: "Geschäftsführer & KI-Stratege",
         linkedin: "https://www.linkedin.com/in/tobias-famefact/",
-        bio: "Tobias Kargoll ist Geschäftsführer der famefact social media GmbH (track by track GmbH) und berät mittelständische Unternehmen bei der strategischen Implementierung von KI-Lösungen. Mit über 10 Jahren Erfahrung in digitaler Transformation hilft er Entscheidern, die richtigen KI-Hebel für ihr Unternehmen zu identifizieren.",
+        bio: "Tobias Sander ist Geschäftsführer der famefact social media GmbH (track by track GmbH) und berät mittelständische Unternehmen bei der strategischen Implementierung von KI-Lösungen. Mit über 10 Jahren Erfahrung in digitaler Transformation hilft er Entscheidern, die richtigen KI-Hebel für ihr Unternehmen zu identifizieren.",
     },
     colors: {
         primary: "#0D0D0D",
@@ -41,13 +41,13 @@ export const siteConfig = {
         city: "Berlin",
         country: "Deutschland",
         phone: "+49 30 403 665 430",
-        email: "info@famefact.com",
+        email: "hi@ki-fuer-den-mittelstand.de",
         managingDirector: "Tobias Sander",
         registerCourt: "Amtsgericht Berlin-Charlottenburg",
         registerNumber: "HRB 129805 B",
         vatId: "DE814954842",
         duns: "34-024-8055",
-        responsibleContent: "Tobias Kargoll",
+        responsibleContent: "Tobias Sander",
     },
     scoring: {
         maturityLevels: [
