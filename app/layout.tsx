@@ -134,6 +134,13 @@ export default function RootLayout({
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
+                {/* Privacy-friendly analytics by Plausible */}
+                <script async src="https://analytics.polymarkt.de/js/pa-jalqbKX7duasTKi6lRBsF.js" />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`,
+                    }}
+                />
             </head>
             <body className={`${openSans.variable} font-body antialiased bg-page-bg text-brand-black`}>
                 {children}
