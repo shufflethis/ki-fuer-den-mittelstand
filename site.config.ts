@@ -40,12 +40,13 @@ export const siteConfig = {
         zip: "10437",
         city: "Berlin",
         country: "Deutschland",
-        phone: "+49 30 403 6654 30",
-        email: "info@trackbytrack.de",
-        managingDirector: "Tobias Kargoll, Gorden Allgemein",
+        phone: "+49 30 403 665 430",
+        email: "info@famefact.com",
+        managingDirector: "Tobias Sander",
         registerCourt: "Amtsgericht Berlin-Charlottenburg",
-        registerNumber: "HRB 142103 B",
-        vatId: "DE 283184918",
+        registerNumber: "HRB 129805 B",
+        vatId: "DE814954842",
+        duns: "34-024-8055",
         responsibleContent: "Tobias Kargoll",
     },
     scoring: {
@@ -59,6 +60,6 @@ export const siteConfig = {
     },
     cta: {
         primary: "Jetzt KI-Analyse starten",
-        calendly: "https://calendly.com/trackbytrack/ki-beratung",
+        calendly: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ37vXtNEiJgPdMVYb5dssJ2SCErLPRc8WZDQ6PSOp4QPwZU2IJIoKqEExVDt6xnCYrcpQCiQjwu",
     },
 };
